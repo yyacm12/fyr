@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标事件</title>
+	</head>
+	<style>
+		#main{
+			/* margin:0 auto; */
+			width: 100px;
+			height:100px;
+			position: relative;
+		}
+		.box{
+			width: 90px;
+			height:90px;
+			opacity: 0.2;
+			background: skyblue;
+			position: absolute;
+		}
+		.phto{
+			width: 100px;
+			height: 150px;
+			vertical-align: middle;
+		}
+		#box1{
+			left: 60px;
+			top: 30px;
+		}
+	</style>
+	<script>
+		function fun(e){
+			alert(e.keyCode);
+		}
+		function mytext(){
+			var a=document.getElementById("input");
+			alert("你写了什么？");
+			}
+	</script>
+	<body >
+		<div id="main">
+			<div id="phto"><img  src="https://huihuxideyu.github.io/web-qianduan/兔子.webp" border="0" alt="" /></div>
+			<div id="box1" class="box" onmouseenter="alert('我来了')">鼠标进入
+			</div>
+			<div>
+			<input type="text" onchange="mytext()" id="iniut" onblur="mytext()"/>
+			</div>
+	</body>
+</html>
